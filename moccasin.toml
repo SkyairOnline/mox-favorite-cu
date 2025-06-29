@@ -1,5 +1,6 @@
 [project]
 src = "src"
+dot_env = ".env"
 
 [networks.anvil]
 url = "http://127.0.0.1:8545"
@@ -13,3 +14,12 @@ save_to_db = false
 default_account_name = "default"
 explorer_uri = "https://eth-sepolia.blockscout.com/"
 explorer_type = "blockscout"
+
+[networks.sepolia-zksync]
+url = "$ZKSYNC_SEPOLIA_RPC_URL"
+chain_id = 300
+save_to_db = false
+default_account_name = "default"
+explorer_uri = "https://explorer.sepolia.era.zksync.dev"
+explorer_type = "zksyncexplorer"
+is_zksync = true
