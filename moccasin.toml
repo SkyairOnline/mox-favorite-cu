@@ -6,3 +6,10 @@ url = "http://127.0.0.1:8545"
 save_to_db = false
 prompt_live = false
 default_account_name = "anvil1"
+
+[networks.sepolia]
+url = "$SEPOLIA_RPC_URL"
+save_to_db = false
+default_account_name = "default"
+explorer_uri = "https://eth-sepolia.blockscout.com/"
+explorer_type = "blockscout"
