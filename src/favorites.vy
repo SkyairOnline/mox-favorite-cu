@@ -5,14 +5,14 @@ struct Person:
     favorite_number: uint256
     name: String[100]
 
-my_favorite_number: uint256
+my_favorite_number: public(uint256)
 
 # Static Array/List
 list_of_numbers: public(uint256[5])
 list_of_people: public(Person[5])
-list_of_people_index: uint256
+list_of_people_index: public(uint256)
 
-name_to_favorite_number: HashMap[String[100], uint256]
+name_to_favorite_number: public(HashMap[String[100], uint256])
 
 @deploy
 def __init__():

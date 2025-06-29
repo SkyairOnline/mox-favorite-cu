@@ -1,5 +1,5 @@
 import pytest
-from script.deploy import deploy_favorites
+from script.deploy_favorites import deploy_favorites
 
 @pytest.fixture(scope="session")
 def favorites_contract():
